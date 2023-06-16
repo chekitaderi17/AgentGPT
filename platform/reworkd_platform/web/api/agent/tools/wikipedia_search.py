@@ -17,7 +17,7 @@ class Wikipedia(Tool):
         wikipedia_client = WikipediaAPIWrapper(
             wiki_client=None,  # Meta private value but mypy will complain its missing
         )
-        
+
         # TODO: Make the below async
         wikipedia_search = wikipedia_client.run(input_str)
         # return summarize(self.model, self.language, goal, task, [wikipedia_search])
